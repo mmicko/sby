@@ -32,9 +32,9 @@ jobs:
 
       - name: Build SBY
         run: |
-          make -C sby install DESTDIR=${GITHUB_WORKSPACE}/.local PREFIX=
+          make install DESTDIR=${GITHUB_WORKSPACE}/.local PREFIX=
 
       - name: Run SBY tests
         run: |
-          make -C sby run_ci
+          make run_ci
 
