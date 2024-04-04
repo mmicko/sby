@@ -11,7 +11,9 @@ jobs:
 
       - name: Checkout Yosys
         uses: actions/checkout@v4
-        repository: 'YosysHQ/yosys'
+        with:
+          repository: 'YosysHQ/yosys'
+          path: 'yosys'
 
       - name: Runtime environment
         run: |
